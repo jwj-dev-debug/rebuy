@@ -1,0 +1,69 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Re:Buy</string>
+
+    <!-- Auth Screen -->
+    <string name="login">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="sign_in">로그인</string>
+    <string name="name">이름</string>
+    <string name="phone_number">전화번호</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="confirm_password">비밀번호 확인</string>
+    <string name="enter_name">이름을 입력하세요</string>
+    <string name="enter_phone">전화번호를 입력하세요</string>
+    <string name="enter_email">이메일을 입력하세요</string>
+    <string name="enter_password">비밀번호를 입력하세요</string>
+    <string name="confirm_password_hint">비밀번호를 다시 입력하세요</string>
+    <string name="dont_have_account">계정이 없으신가요?</string>
+    <string name="already_have_account">이미 계정이 있으신가요?</string>
+    <string name="go_to_home">둘러보기</string>
+
+    <!-- Tab Names -->
+    <string name="tab_home">홈</string>
+    <string name="tab_search">검색</string>
+    <string name="tab_community">커뮤니티</string>
+
+    <!-- Home Screen -->
+    <string name="search_products">상품 검색하기</string>
+    <string name="random_products">추천 상품</string>
+
+    <!-- Search Screen -->
+    <string name="search_hint">상품명을 검색하세요</string>
+    <string name="search">검색</string>
+    <string name="region">지역</string>
+    <string name="category">카테고리</string>
+    <string name="all_regions">전체</string>
+    <string name="seodaemun">서대문구</string>
+    <string name="dongdaemun">동대문구</string>
+    <string name="search_results">검색 결과</string>
+    <string name="no_results">검색 결과가 없습니다</string>
+    <string name="products_found">%d개의 상품</string>
+
+    <!-- Community Screen -->
+    <string name="community_forum">커뮤니티</string>
+    <string name="community_preview">커뮤니티</string>
+    <string name="share_experience">재활용 상품 경험을 공유해보세요</string>
+    <string name="new_post">새 글 작성</string>
+    <string name="no_posts">아직 게시글이 없습니다</string>
+    <string name="create_first_post">첫 번째 글을 작성해보세요!</string>
+    <string name="view_all">전체보기 ></string>
+    <string name="community_placeholder_title">냉장고 구매 후기</string>
+    <string name="community_placeholder_content">서대문구 재활용센터에서 냉장고를 구매했는데 상태가 정말 좋아요!</string>
+    <string name="community_placeholder_author">익명 • 1시간 전</string>
+
+    <!-- Common -->
+    <string name="loading">로딩 중...</string>
+    <string name="error">오류</string>
+    <string name="success">성공</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확인</string>
+    <string name="logout">로그아웃</string>
+
+    <!-- Product Card -->
+    <string name="won">원</string>
+    <string name="recycling_center">재활용센터</string>
+    <string name="product_image">상품 이미지</string>
+    <string name="sold_out">판매완료</string>
+</resources>

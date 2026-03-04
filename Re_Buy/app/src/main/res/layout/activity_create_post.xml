@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="게시글 제목을 입력하세요"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내용"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="재활용 상품 후기나 정보를 공유해주세요"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btn_add_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사진 추가 (0/3)"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/image_preview_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:id="@+id/frame_preview_1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_preview_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_remove_image_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|top"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:background="@android:color/white"
+                        android:padding="4dp"
+                        android:layout_margin="4dp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_preview_2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_preview_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_remove_image_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|top"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:background="@android:color/white"
+                        android:padding="4dp"
+                        android:layout_margin="4dp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_preview_3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_preview_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_remove_image_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|top"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:background="@android:color/white"
+                        android:padding="4dp"
+                        android:layout_margin="4dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="게시하기"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/green_primary"
+                android:paddingVertical="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Professional Teal Theme - Clean and modern -->
+    <color name="green_primary">#00796B</color>
+    <color name="green_primary_dark">#004D40</color>
+    <color name="green_light">#B2DFDB</color>
+    <color name="green_accent">#26A69A</color>
+
+    <!-- Legacy purple colors (kept for backward compatibility) -->
+    <color name="purple_500">#00796B</color>
+    <color name="purple_700">#004D40</color>
+
+    <!-- Additional colors -->
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#616161</color>
+</resources>

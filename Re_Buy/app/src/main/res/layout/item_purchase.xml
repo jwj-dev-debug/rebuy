@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/product_image"
+            tools:src="@android:drawable/ic_menu_gallery" />
+
+        <!-- Product Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp">
+
+            <!-- Product Title -->
+            <TextView
+                android:id="@+id/tv_product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제품 이름"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Purchase Date -->
+            <TextView
+                android:id="@+id/tv_purchase_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2024-01-01"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <!-- Environmental Impact Summary -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <!-- CO2 -->
+                <TextView
+                    android:id="@+id/tv_carbon_impact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CO₂ 150kg"
+                    android:textSize="11sp"
+                    android:textColor="@color/green_primary"
+                    android:textStyle="bold"
+                    android:background="@color/green_light"
+                    android:padding="4dp"
+                    android:layout_marginEnd="8dp" />
+
+                <!-- Water -->
+                <TextView
+                    android:id="@+id/tv_water_impact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="물 2500L"
+                    android:textSize="11sp"
+                    android:textColor="#2196F3"
+                    android:textStyle="bold"
+                    android:background="#E3F2FD"
+                    android:padding="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Delete Button (optional) -->
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/ic_menu_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/darker_gray"
+            android:contentDescription="@string/delete" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

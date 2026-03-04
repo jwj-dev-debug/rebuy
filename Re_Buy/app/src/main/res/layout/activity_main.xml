@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Re:Buy"
+                android:textSize="24sp"
+                android:textColor="@color/green_primary"
+                android:textStyle="bold"
+                android:layout_gravity="start"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btn_login_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login" android:backgroundTint="@color/green_primary" android:minHeight="0dp" android:paddingVertical="8dp"/>
+                <Button android:id="@+id/btn_signup_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_up" android:backgroundTint="@color/green_primary" android:layout_marginStart="8dp" android:minHeight="0dp" android:paddingVertical="8dp"/>
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:tabIndicatorColor="@color/green_primary"
+            app:tabTextColor="@color/black"
+            app:tabSelectedTextColor="@color/green_primary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

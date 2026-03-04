@@ -1,0 +1,93 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Re:Buy</string>
+
+    <!-- Auth Screen -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">이름 (Name)</string>
+    <string name="phone_number">전화번호 (Phone)</string>
+    <string name="email">이메일 (Email)</string>
+    <string name="password">비밀번호 (Password)</string>
+    <string name="confirm_password">비밀번호 확인</string>
+    <string name="enter_name">이름을 입력하세요</string>
+    <string name="enter_phone">전화번호를 입력하세요</string>
+    <string name="enter_email">이메일을 입력하세요</string>
+    <string name="enter_password">비밀번호를 입력하세요</string>
+    <string name="confirm_password_hint">비밀번호를 다시 입력하세요</string>
+    <string name="dont_have_account">계정이 없으신가요?</string>
+    <string name="already_have_account">이미 계정이 있으신가요?</string>
+    <string name="go_to_home">둘러보기 (Guest Mode)</string>
+
+    <!-- Tab Names -->
+    <string name="tab_home">홈 (Home)</string>
+    <string name="tab_search">검색 (Search)</string>
+    <string name="tab_community">커뮤니티</string>
+
+    <!-- Home Screen -->
+    <string name="search_products">상품 검색하기</string>
+    <string name="random_products">추천 상품</string>
+
+    <!-- Search Screen -->
+    <string name="search_hint">상품명을 검색하세요</string>
+    <string name="search">검색</string>
+    <string name="region">지역</string>
+    <string name="category">카테고리</string>
+    <string name="all_regions">전체</string>
+    <string name="seodaemun">서대문구</string>
+    <string name="dongdaemun">동대문구</string>
+    <string name="search_results">검색 결과</string>
+    <string name="no_results">검색 결과가 없습니다</string>
+    <string name="products_found">%d개의 상품</string>
+    <string name="no_products_found">검색 결과가 없습니다</string>
+    <string name="try_different_filters">다른 검색어나 필터를 시도해보세요</string>
+    <string name="hide_sold_out">판매완료 상품 숨기기</string>
+
+    <!-- Community Screen -->
+    <string name="community_forum">커뮤니티 Forum</string>
+    <string name="community_preview">커뮤니티 Community</string>
+    <string name="share_experience">재활용 상품 경험을 공유해보세요</string>
+    <string name="new_post">새 글 작성</string>
+    <string name="no_posts">아직 게시글이 없습니다</string>
+    <string name="create_first_post">첫 번째 글을 작성해보세요!</string>
+    <string name="view_all">전체보기 ></string>
+    <string name="community_placeholder_title">냉장고 구매 후기</string>
+    <string name="community_placeholder_content">서대문구 재활용센터에서 냉장고를 구매했는데 상태가 정말 좋아요!</string>
+    <string name="community_placeholder_author">익명 • 1시간 전</string>
+
+    <!-- Common -->
+    <string name="loading">로딩 중...</string>
+    <string name="error">오류</string>
+    <string name="success">성공</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확인</string>
+    <string name="logout">로그아웃</string>
+
+    <!-- Product Card -->
+    <string name="won">원</string>
+    <string name="recycling_center">재활용센터</string>
+    <string name="product_image">상품 이미지</string>
+    <string name="sold_out">판매완료</string>
+
+    <!-- Favorites -->
+    <string name="favorite">즐겨찾기</string>
+    <string name="no_favorites">즐겨찾기한 항목이 없습니다</string>
+    <string name="remove_favorite">즐겨찾기 제거</string>
+    <string name="add_to_favorites">즐겨찾기에 추가</string>
+    <string name="removed_from_favorites">즐겨찾기에서 제거되었습니다</string>
+    <string name="added_to_favorites">즐겨찾기에 추가되었습니다</string>
+
+    <!-- Environmental Impact Dashboard -->
+    <string name="environmental_impact">환경 영향</string>
+    <string name="view_impact_dashboard">환경 영향 대시보드 보기</string>
+    <string name="achievement_badge">달성 배지</string>
+    <string name="carbon_icon">탄소 아이콘</string>
+    <string name="water_icon">물 아이콘</string>
+    <string name="waste_icon">폐기물 아이콘</string>
+    <string name="purchases_icon">구매 아이콘</string>
+    <string name="delete">삭제</string>
+    <string name="empty_purchases">구매 내역 없음</string>
+    <string name="mark_as_purchased">구매 완료로 표시</string>
+    <string name="purchase_marked">구매가 기록되었습니다! 환경 영향 대시보드를 확인하세요</string>
+</resources>

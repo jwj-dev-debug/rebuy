@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="regions">
+        <item>전체</item>
+        <item>서대문구</item>
+        <item>동대문구</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>전체</item>
+        <item>냉장고</item>
+        <item>세탁기</item>
+        <item>전자레인지</item>
+        <item>TV/영상기기</item>
+        <item>난방기기</item>
+        <item>침대</item>
+        <item>소파</item>
+        <item>화장대</item>
+        <item>서랍장/수납가구</item>
+        <item>테이블/책상</item>
+    </string-array>
+</resources>

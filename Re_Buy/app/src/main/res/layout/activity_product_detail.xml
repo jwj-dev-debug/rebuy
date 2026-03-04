@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Product Image -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#F5F5F5">
+
+            <ImageView
+                android:id="@+id/iv_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/product_image"/>
+
+            <!-- Sold Out Badge -->
+            <TextView
+                android:id="@+id/tv_sold_out_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="16dp"
+                android:background="@color/green_primary"
+                android:padding="8dp"
+                android:text="@string/sold_out"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <!-- Back Button (Left) -->
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_circle_white_bg"
+                android:contentDescription="뒤로가기"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@android:color/black"
+                android:elevation="4dp"
+                android:padding="12dp"/>
+
+            <!-- Favorite Button (Right) -->
+            <ImageButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_circle_white_bg"
+                android:contentDescription="@string/favorite"
+                android:src="@android:drawable/star_big_off"
+                android:visibility="gone"
+                android:elevation="4dp"
+                android:padding="10dp"/>
+        </FrameLayout>
+
+        <!-- Product Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Product Title -->
+            <TextView
+                android:id="@+id/tv_product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제품명"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150,000원"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_primary"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Product Details Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상품 정보"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Center -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="판매처"
+                    android:textColor="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tv_product_center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="동대문구 재활용센터"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="카테고리"
+                    android:textColor="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tv_product_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="냉장고"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <!-- Condition -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="상태"
+                    android:textColor="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tv_product_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="양호"
+                    android:textColor="@color/green_primary"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Created Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="등록일"
+                    android:textColor="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tv_product_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2025-10-27"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <!-- Status Badge -->
+            <TextView
+                android:id="@+id/tv_status_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 가능"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:background="@color/green_primary"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Purchase Hint -->
+            <TextView
+                android:id="@+id/tv_purchase_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 길게 눌러 구매를 기록하면 환경 영향을 추적할 수 있습니다"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:background="#F5F5F5"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Primary Actions Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <!-- Reserve Button -->
+                    <Button
+                        android:id="@+id/btn_reserve"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="예약하기"
+                        android:backgroundTint="@color/green_primary"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="gone"/>
+
+                    <!-- Contact Center Button -->
+                    <Button
+                        android:id="@+id/btn_contact_center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="센터 문의"
+                        android:backgroundTint="#2196F3"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <!-- Secondary Actions Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Mark as Purchased Button -->
+                    <Button
+                        android:id="@+id/btn_mark_purchased"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="구매 완료 표시"
+                        android:backgroundTint="#FF9800"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="gone"/>
+
+                    <!-- Visit Website Button -->
+                    <Button
+                        android:id="@+id/btn_visit_website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="웹사이트 방문"
+                        android:backgroundTint="@color/green_primary"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

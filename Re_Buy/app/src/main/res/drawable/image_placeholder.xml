@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M0,0h200v200h-200z"/>
+
+    <!-- Image Icon -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M65,70 L80,90 L95,75 L120,110 L135,90 L65,70 Z"/>
+
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M50,50 L150,50 L150,150 L50,150 Z"
+        android:strokeColor="#757575"
+        android:strokeWidth="2"
+        android:fillType="evenOdd"/>
+
+    <!-- Small circle (sun/moon) -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M120,70 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"/>
+
+</vector>
